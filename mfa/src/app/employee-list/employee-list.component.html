@@ -62,7 +62,7 @@
       <p class="employee mobile">{{ employee.mobile }}</p>
       <p class="employee code">{{ employee.empCode }}</p>
       <p class="employee project">{{ employee.projects }}</p>
-      <div>
+      <div *ngIf="account?.role === 'admin'">
         <img
           [src]="getFitnessImage(employee.mentalFitness)"
           alt=""
