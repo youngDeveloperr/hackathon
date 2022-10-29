@@ -11,22 +11,22 @@
     </div>
   </div>
   <div class="input-container">
-    <form class="input-sub-container">
+    <form class="input-sub-container" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
       <div class="title">Login</div>
       <div class="input-box">
         <img src="assets/images/mail.svg" alt="mail" />
-        <input type="email" formControlName="email" placeholder="Email" />
+        <input type="email" formControlName="email" placeholder="Email"  required=""/>
       </div>
       <div class="input-box password">
         <img src="assets/images/key.svg" alt="key" />
         <input
           type="password"
           formControlName="password"
-          placeholder="Password"
+          placeholder="Password" required=""
         />
       </div>
       <div class="forgot-password">
-        <a>Forgot Password ?</a>
+        <a title="Don't click">Forgot Password ?</a>
       </div>
       <div class="button">
         <button type="submit" class="login-btn">Login</button>
