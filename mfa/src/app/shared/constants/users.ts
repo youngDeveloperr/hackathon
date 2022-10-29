@@ -10,9 +10,10 @@ export const users: IUser[] = [
     inCharge: 'Arun',
     reportedOn: 1667054535000,
     mentalFitness: 'neutral',
-    email:'susan@gmail.com',
-    empCode:'NE033',
-    mobile:'+919562216545'
+    email: 'susan@gmail.com',
+    empCode: 'NE033',
+    mobile: '+919562216545',
+    resolved: false,
   },
   {
     id: '2',
@@ -23,9 +24,10 @@ export const users: IUser[] = [
     inCharge: 'Rahul',
     reportedOn: 1666881735000,
     mentalFitness: 'sad',
-    email:'max@gmail.com',
-    empCode:'NE043',
-    mobile:'+919989216545'
+    email: 'max@gmail.com',
+    empCode: 'NE043',
+    mobile: '+919989216545',
+    resolved: false,
   },
   {
     id: '3',
@@ -36,9 +38,10 @@ export const users: IUser[] = [
     inCharge: 'Sreenath',
     reportedOn: 1666795335000,
     mentalFitness: 'sad',
-    email:'megan@gmail.com',
-    empCode:'NE030',
-    mobile:'+919568586545'
+    email: 'megan@gmail.com',
+    empCode: 'NE030',
+    mobile: '+919568586545',
+    resolved: false,
   },
   {
     id: '4',
@@ -49,8 +52,23 @@ export const users: IUser[] = [
     inCharge: 'Fahad',
     reportedOn: 1666449735000,
     mentalFitness: 'neutral',
-    email:'tim@gmail.com',
-    empCode:'NE036',
-    mobile:'+9195622164545'
+    email: 'tim@gmail.com',
+    empCode: 'NE036',
+    mobile: '+9195622164545',
+    resolved: false,
+  },
+  {
+    id: '70',
+    name: 'Jennifer',
+    image: 'assets/images/mental-fitness/users/user-5.svg',
+    designation: 'Intern',
+    projects: [],
+    inCharge: 'Jesna',
+    reportedOn: 1666449735000,
+    mentalFitness: 'neutral',
+    email: 'jen@gmail.com',
+    empCode: 'NE070',
+    mobile: '+9195622151545',
+    resolved: false,
   },
 ];

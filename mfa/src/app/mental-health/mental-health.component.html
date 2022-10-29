@@ -13,6 +13,7 @@
           [src]="getUserFitnessImage(user.mentalFitness)"
           alt=""
           class="fitness"
+          [ngClass]="{ resolved: user.resolved }"
         />
       </div>
       <p class="summary">{{ getDuration(user.reportedOn) }}</p>
@@ -33,7 +34,9 @@
         </div>
       </div>
 
-      <button>Mark as resolved</button>
+      <button [disabled]="user.resolved">
+        {{ user.resolved ? "Resolved" : "Mark as resolved" }}
+      </button>
     </mfa-card>
   </div>
 </div>
