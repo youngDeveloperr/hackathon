@@ -1,0 +1,68 @@
+.container {
+  padding: 16px 24px;
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .count {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ff0707;
+      border-radius: 4px;
+      background-color: white;
+      font-weight: 700;
+      padding: 4px 16px;
+      font-size: 12px;
+      line-height: 1;
+    }
+  }
+}
+
+.content-container {
+  display: flex;
+  gap: 16px;
+
+  .first-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .name {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .fitness {
+      margin-left: auto;
+    }
+  }
+
+  .summary {
+    font-size: 12px;
+    margin: 16px 0;
+  }
+
+  .more-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    > div {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+
+      .title {
+        color: #737373;
+      }
+    }
+  }
+}
