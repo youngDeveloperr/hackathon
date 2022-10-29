@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,12 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
     DashboardComponent,
     EmployeeListComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ChatModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    ChatModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
