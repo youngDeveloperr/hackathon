@@ -31,15 +31,31 @@
       .nav {
         display: flex;
         align-items: center;
+        border-radius: 6px;
 
         &:hover {
           filter: invert(63%) sepia(49%) saturate(532%) hue-rotate(117deg)
             brightness(92%) contrast(84%);
         }
       }
+      // &:hover {
+      //   border-radius: 6px;
+      //   background: linear-gradient(
+      //     90deg,
+      //     rgba(108, 210, 192, 0.18) 37.74%,
+      //     rgba(108, 210, 192, 0) 100%
+      //   );
+      // }
       &.active {
         filter: invert(63%) sepia(49%) saturate(532%) hue-rotate(117deg)
           brightness(92%) contrast(84%);
+        align-items: center;
+        border-radius: 6px;
+        background: linear-gradient(
+          90deg,
+          rgba(108, 210, 192, 0.18) 37.74%,
+          rgba(108, 210, 192, 0) 100%
+        );
       }
 
       .title {
