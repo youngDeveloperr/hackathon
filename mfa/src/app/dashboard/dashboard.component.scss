@@ -1,3 +1,5 @@
+@import "/src/colors";
+
 .container {
   padding: 16px;
   background: #fafafa;
@@ -41,4 +43,29 @@ aside {
   .calendar-image {
     margin-top: -24px;
   }
+}
+
+.card-title {
+  margin: 0;
+}
+
+.overall {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 700;
+  margin: 16px 0;
+
+  .text {
+    font-size: 64px;
+    color: $happy-color;
+  }
+}
+
+.attention {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
 }
