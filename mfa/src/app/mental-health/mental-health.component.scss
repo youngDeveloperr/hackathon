@@ -42,6 +42,10 @@
 
     .fitness {
       margin-left: auto;
+
+      &.resolved {
+        filter: grayscale(100%);
+      }
     }
   }
 
@@ -62,6 +66,31 @@
 
       .title {
         color: #737373;
+      }
+    }
+  }
+
+  button {
+    background-color: #5bebd3;
+    border: 2px solid #5bebd3;
+    width: calc(100% + 32px);
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 16px;
+    margin-bottom: -16px;
+    margin-left: -16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:disabled {
+      background-color: #eaeaea;
+      border-color: #eaeaea;
+      cursor: not-allowed;
+    }
+
+    &:not([disabled]) {
+      &:hover {
+        background-color: white;
       }
     }
   }
