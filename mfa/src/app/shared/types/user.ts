@@ -1,4 +1,4 @@
-export type UserFitness = 'sad' | 'neutral'| 'happy';
+export type UserFitness = 'sad' | 'neutral' | 'happy';
 
 export interface IUser {
   id: string;
@@ -9,7 +9,8 @@ export interface IUser {
   inCharge: string;
   reportedOn: number;
   mentalFitness: UserFitness;
-  email:string,
-  empCode:string,
-  mobile:string
+  email: string;
+  empCode: string;
+  mobile: string;
+  resolved: boolean;
 }

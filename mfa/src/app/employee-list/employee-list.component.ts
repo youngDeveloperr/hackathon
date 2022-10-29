@@ -25,6 +25,7 @@ export class EmployeeListComponent implements OnInit {
       email: 'sreenath@gmail.com',
       empCode: 'NE031',
       mobile: '+919562326438',
+      resolved: false,
     },
     {
       id: '6',
@@ -38,6 +39,7 @@ export class EmployeeListComponent implements OnInit {
       email: 'anu@gmail.com',
       empCode: 'NE038',
       mobile: '+919995551110',
+      resolved: false,
     },
     {
       id: '7',
@@ -51,6 +53,7 @@ export class EmployeeListComponent implements OnInit {
       email: 'nimisha@gmail.com',
       empCode: 'NE030',
       mobile: '+919562326438',
+      resolved: false,
     },
   ];
 
