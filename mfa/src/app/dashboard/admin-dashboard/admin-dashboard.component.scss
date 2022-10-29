@@ -1,0 +1,71 @@
+@import "/src/colors";
+
+.container {
+  padding: 16px;
+  background: #fafafa;
+  flex: 1;
+  display: flex;
+}
+
+.inner-container {
+  flex: 1;
+
+  .project-management-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .view-all {
+      color: #3bbca0;
+      font-size: 14px;
+    }
+  }
+
+  .dotted-scroll-container {
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-top: -16px;
+  }
+}
+
+.image-offset {
+  margin-left: -24px;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  padding-left: 32px;
+
+  .calendar-image {
+    margin-top: -24px;
+  }
+}
+
+.card-title {
+  margin: 0;
+}
+
+.overall {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-weight: 700;
+  margin: 16px 0;
+
+  .text {
+    font-size: 64px;
+    color: $happy-color;
+  }
+}
+
+.attention {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
