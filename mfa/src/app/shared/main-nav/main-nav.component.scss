@@ -3,6 +3,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 25px;
+  border-bottom: 1px solid #cdcdcd;
+  background-color: #fafafa;
+
+  .title-content {
+    margin: 0;
+    font-size: 32px;
+  }
 
   .user-and-icons {
     display: flex;

@@ -6,10 +6,11 @@
     flex-direction: column;
     flex: 1;
     overflow: hidden;
-    
-    .content{
-        flex: 1;
-        overflow: auto;
+
+    .content {
+      flex: 1;
+      overflow: auto;
+      background-color: #fafafa;
     }
   }
 }

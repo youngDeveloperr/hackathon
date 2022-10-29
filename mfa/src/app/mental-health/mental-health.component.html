@@ -1,1 +1,37 @@
-<p>mental-health works!</p>
+<div class="container">
+  <div class="title-container">
+    <h3>Needs Attention</h3>
+    <span *ngIf="users.length > 0" class="count">{{ users.length }}</span>
+  </div>
+
+  <div class="content-container">
+    <mfa-card *ngFor="let user of users" [width]="'270px'">
+      <div class="first-row">
+        <img [src]="user.image" alt="" />
+        <p class="name">{{ user.name }}</p>
+        <img
+          [src]="getUserFitnessImage(user.mentalFitness)"
+          alt=""
+          class="fitness"
+        />
+      </div>
+      <p class="summary">{{ getDuration(user.reportedOn) }}</p>
+      <div class="more-details">
+        <div>
+          <span class="title">Designation</span>
+          <span>{{ user.designation }}</span>
+        </div>
+
+        <div>
+          <span class="title">Projects</span>
+          <span>{{ getUserProjects(user.projects) }}</span>
+        </div>
+
+        <div>
+          <span class="title">In charge</span>
+          <span>{{ user.inCharge }}</span>
+        </div>
+      </div>
+    </mfa-card>
+  </div>
+</div>
