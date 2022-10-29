@@ -1,1 +1,75 @@
-<p>employee-list works!</p>
+<div class="list-container">
+  <div class="main-tabs">
+    <div class="search-bar">
+      <img src="assets/images/employee-list/search.svg" alt="" />
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="common department">
+      <h5>Department</h5>
+      <img src="assets/images/employee-list/caret.svg" alt="" />
+    </div>
+    <div class="common projects">
+      <h5>Projects</h5>
+      <img src="assets/images/employee-list/caret.svg" alt="" />
+    </div>
+    <div class="common manager">
+      <h5>Manager</h5>
+      <img src="assets/images/employee-list/caret.svg" alt="" />
+    </div>
+    <div class="buttons">
+      <button class="add-employee">
+        <h5>Add Employee</h5>
+      </button>
+      <button class="delete">
+        <img src="assets/images/employee-list/delete.svg" alt="" />
+      </button>
+    </div>
+  </div>
+  <div class="list-titles">
+    <div class="titles">
+      <div class="text employee">
+        <h5>Employee</h5>
+        <img src="../../assets/images/employee-list/sort.svg" alt="" />
+      </div>
+      <div class="text">
+        <h5>E-mail</h5>
+      </div>
+      <div class="text">
+        <h5>Mobile No</h5>
+      </div>
+      <div class="text">
+        <h5>Employee code</h5>
+        <img src="../../assets/images/employee-list/sort.svg" alt="" />
+      </div>
+      <div class="text">
+        <h5>Project</h5>
+        <img src="../../assets/images/employee-list/sort.svg" alt="" />
+      </div>
+      <div class="text">
+        <h5>Status</h5>
+      </div>
+    </div>
+  </div>
+  <div class="employee-list">
+    <div class="list" *ngFor="let employee of employeeList">
+      <div class="employee name">
+        <img [src]="employee.image" alt="" />
+        <p>{{ employee.name }}</p>
+      </div>
+      <div class="employee email">
+        <p>{{ employee.email }}</p>
+      </div>
+      <p class="employee mobile">{{ employee.mobile }}</p>
+      <p class="employee code">{{ employee.empCode }}</p>
+      <p class="employee project">{{ employee.projects }}</p>
+      <div>
+        <img
+          [src]="getFitnessImage(employee.mentalFitness)"
+          alt=""
+          class="fitness"
+        />
+      </div>
+      <div></div>
+    </div>
+  </div>
+</div>

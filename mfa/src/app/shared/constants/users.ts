@@ -10,6 +10,9 @@ export const users: IUser[] = [
     inCharge: 'Arun',
     reportedOn: 1667054535000,
     mentalFitness: 'neutral',
+    email:'susan@gmail.com',
+    empCode:'NE033',
+    mobile:'+919562216545'
   },
   {
     id: '2',
@@ -20,6 +23,9 @@ export const users: IUser[] = [
     inCharge: 'Rahul',
     reportedOn: 1666881735000,
     mentalFitness: 'sad',
+    email:'max@gmail.com',
+    empCode:'NE043',
+    mobile:'+919989216545'
   },
   {
     id: '3',
@@ -30,6 +36,9 @@ export const users: IUser[] = [
     inCharge: 'Sreenath',
     reportedOn: 1666795335000,
     mentalFitness: 'sad',
+    email:'megan@gmail.com',
+    empCode:'NE030',
+    mobile:'+919568586545'
   },
   {
     id: '4',
@@ -40,5 +49,8 @@ export const users: IUser[] = [
     inCharge: 'Fahad',
     reportedOn: 1666449735000,
     mentalFitness: 'neutral',
+    email:'tim@gmail.com',
+    empCode:'NE036',
+    mobile:'+9195622164545'
   },
 ];
