@@ -1,0 +1,115 @@
+.list-container {
+  padding: 42px 16px;
+  background: #fafafa;
+
+  .main-tabs {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+
+    .common {
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid #ececec;
+      border-radius: 6px;
+      height: 36px;
+      padding: 8px 16px;
+
+      img {
+        padding: 0 3px;
+      }
+    }
+    .search-bar {
+      background: #ffffff;
+      border: 2px solid #ececec;
+      display: flex;
+      align-items: center;
+      height: 36px;
+      width: 372px;
+      border-radius: 5px;
+
+      input {
+        border: none;
+        outline: none;
+      }
+    }
+    .buttons {
+      display: flex;
+      .add-employee,
+      .delete {
+        display: flex;
+        align-items: center;
+        height: 36px;
+      }
+      .add-employee {
+        background: #3bbca0;
+        border: none;
+        color: white;
+        border-radius: 5px;
+      }
+      .delete {
+        margin: 0 20px;
+        border: none;
+        background: transparent;
+      }
+    }
+  }
+  .list-titles {
+    .titles {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 42px 25px 0 25px;
+
+      .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #878787;
+        font-weight: 700;
+        font-size: 18px;
+        width: 200px;
+
+        &.employee {
+          margin-left: -50px;
+        }
+
+        h5 {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .employee-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 25px 25px 25px;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      margin: 15px 0;
+      padding: 20px;
+
+      .employee {
+        display: flex;
+        width: 200px;
+        p {
+          padding: 0 10px;
+        }
+        img {
+          width: 42px;
+        }
+      }
+      .fitness {
+        display: flex;
+        align-items: center;
+        width: 29px;
+        margin: 16px 0;
+      }
+    }
+  }
+}
