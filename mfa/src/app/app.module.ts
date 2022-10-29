@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthenticatedComponent } from './authenticated/authenticated.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoginComponent,
     DashboardComponent,
     EmployeeListComponent,
+    AuthenticatedComponent,
   ],
   imports: [
     BrowserModule,
