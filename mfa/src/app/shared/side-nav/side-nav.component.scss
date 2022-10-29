@@ -7,6 +7,9 @@
 
   .nav-title {
     display: flex;
+    padding-top: 16px;
+    padding-left: 16px;
+
     img {
       width: 30px;
       height: 30px;
@@ -16,6 +19,7 @@
       font-size: 24px;
       padding: 0 24px;
       margin: 0;
+      flex: 1;
     }
   }
   .nav-content {
