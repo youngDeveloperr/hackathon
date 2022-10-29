@@ -5,6 +5,7 @@ import { AuthenticatedComponent } from './authenticated/authenticated.component'
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { LoginComponent } from './login/login.component';
+import { MentalHealthComponent } from './mental-health/mental-health.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,7 @@ const routes: Routes = [
     children: [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'list', component: EmployeeListComponent },
+      { path: 'health', component: MentalHealthComponent },
     ],
   },
   { path: 'login', component: LoginComponent },

@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
+import { MentalHealthComponent } from './mental-health/mental-health.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AuthenticatedComponent } from './authenticated/authenticated.component'
     DashboardComponent,
     EmployeeListComponent,
     AuthenticatedComponent,
+    MentalHealthComponent,
   ],
   imports: [
     BrowserModule,
