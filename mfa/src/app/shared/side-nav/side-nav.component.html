@@ -1,1 +1,19 @@
-<p>side-nav works!</p>
+<div class="side-nav-container">
+  <div class="nav-title">
+    <img src="../../../assets/images/N-logo.svg" alt="logo" />
+    <p class="text">N M S</p>
+  </div>
+  <div class="nav-content">
+    <a
+      class="side-nav"
+      *ngFor="let nav of sideNav"
+      [routerLink]="[nav.path]"
+      routerLinkActive="active"
+    >
+      <div class="nav" (click)="selectedNav(nav.path)">
+        <img src="{{ nav.image }}" />
+        <p class="title">{{ nav.title }}</p>
+      </div>
+    </a>
+  </div>
+</div>

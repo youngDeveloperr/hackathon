@@ -1,0 +1,15 @@
+.side-nav-bar {
+  display: flex;
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    
+    .content{
+        flex: 1;
+        overflow: auto;
+    }
+  }
+}
