@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { intervalToDuration } from 'date-fns';
+
 type UserFitness = 'sad' | 'neutral';
 
 interface IUser {
@@ -27,7 +29,7 @@ export class MentalHealthComponent implements OnInit {
       designation: 'Frontend Engineer',
       projects: ['Kesher'],
       inCharge: 'Arun',
-      reportedOn: 123123,
+      reportedOn: 1667054535000,
       mentalFitness: 'neutral',
     },
     {
@@ -37,7 +39,7 @@ export class MentalHealthComponent implements OnInit {
       designation: 'UI Designer',
       projects: ['NMS', 'IBS'],
       inCharge: 'Rahul',
-      reportedOn: 123123,
+      reportedOn: 1666881735000,
       mentalFitness: 'sad',
     },
     {
@@ -47,7 +49,7 @@ export class MentalHealthComponent implements OnInit {
       designation: 'Backend Engineer',
       projects: ['Kesher'],
       inCharge: 'Sreenath',
-      reportedOn: 123123,
+      reportedOn: 1666795335000,
       mentalFitness: 'sad',
     },
     {
@@ -57,7 +59,7 @@ export class MentalHealthComponent implements OnInit {
       designation: 'Intern',
       projects: [],
       inCharge: 'Fahad',
-      reportedOn: 123123,
+      reportedOn: 1666449735000,
       mentalFitness: 'neutral',
     },
   ];
@@ -74,5 +76,31 @@ export class MentalHealthComponent implements OnInit {
 
   getUserFitnessImage(fitness: UserFitness) {
     return `assets/images/mental-fitness/status/${fitness}.svg`;
+  }
+
+  getDuration(reportedOn: number) {
+    const { weeks, days, minutes } = intervalToDuration({
+      start: reportedOn,
+      end: Date.now(),
+    });
+
+    let text = 'Not feeling well since';
+    const parts: string[] = [];
+
+    if (weeks) {
+      parts.push(`${weeks} weeks`);
+    }
+
+    if (days) {
+      parts.push(`${days} days`);
+    }
+
+    if (minutes && parts.length === 0) {
+      return 'Not feeling well just now!';
+    }
+
+    text += ` ${parts.join(', ')} ago!`;
+
+    return parts.length > 0 ? text : null;
   }
 }
