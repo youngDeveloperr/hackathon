@@ -53,7 +53,7 @@ export class SideNavComponent implements OnInit {
     },
     {
       title: 'Mental Health',
-      image: 'assets/images/dashboard-2.svg',
+      image: 'assets/images/health.svg',
       path: '/health',
     },
   ];
