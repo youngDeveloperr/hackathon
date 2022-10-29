@@ -45,7 +45,7 @@
         <h5>Project</h5>
         <img src="../../assets/images/employee-list/sort.svg" alt="" />
       </div>
-      <div class="text">
+      <div class="text status">
         <h5>Status</h5>
       </div>
     </div>
@@ -67,9 +67,10 @@
           [src]="getFitnessImage(employee.mentalFitness)"
           alt=""
           class="fitness"
+          title="{{ getStatusTitle(employee.mentalFitness) }}"
         />
       </div>
-      <div></div>
+      <img src="../../assets/images/employee-list/edit.svg" alt="" />
     </div>
   </div>
 </div>

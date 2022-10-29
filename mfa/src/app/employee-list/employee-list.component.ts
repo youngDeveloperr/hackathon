@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { users } from '../shared/constants/users';
 import { IUser, UserFitness } from '@nms/types';
+import { id } from 'date-fns/locale';
 
 @Component({
   selector: 'app-employee-list',
@@ -55,6 +56,16 @@ export class EmployeeListComponent implements OnInit {
 
   getFitnessImage(fitness: UserFitness) {
     return `assets/images/mental-fitness/status/${fitness}.svg`;
+  }
+  getStatusTitle(fitness: UserFitness) {
+    switch (fitness) {
+      case 'happy':
+        return 'Very Happy';
+      case 'sad':
+        return 'Not Okay since 5 days';
+      case 'neutral':
+        return 'Not Okay since 2 days';
+    }
   }
   ngOnInit(): void {}
 }
