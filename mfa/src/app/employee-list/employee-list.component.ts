@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { users } from '../shared/constants/users';
-import { IUser, UserFitness } from '@nms/types';
+import { IAccount, IUser, UserFitness } from '@nms/types';
 import { id } from 'date-fns/locale';
+import { AuthService } from '@nms/services';
 
 @Component({
   selector: 'app-employee-list',
@@ -9,7 +10,11 @@ import { id } from 'date-fns/locale';
   styleUrls: ['./employee-list.component.scss'],
 })
 export class EmployeeListComponent implements OnInit {
-  constructor() {}
+  account: IAccount | undefined;
+
+  constructor(private authService: AuthService) {
+    this.authService.account.subscribe((account) => (this.account = account));
+  }
 
   employeeList: IUser[] = [
     ...users,

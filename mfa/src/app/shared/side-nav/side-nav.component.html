@@ -6,7 +6,7 @@
   <div class="nav-content">
     <a
       class="side-nav"
-      *ngFor="let nav of adminSideNav"
+      *ngFor="let nav of account?.role === 'admin' ? adminSideNav : userSideNav"
       [routerLink]="[nav.path]"
       routerLinkActive="active"
     >
