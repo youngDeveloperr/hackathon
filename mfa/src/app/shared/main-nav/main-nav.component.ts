@@ -1,6 +1,8 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
+
+import { AuthService } from '@nms/services';
+import { IAccount } from '@nms/types';
 
 @Component({
   selector: 'mfa-main-nav',
@@ -8,9 +10,12 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./main-nav.component.scss'],
 })
 export class MainNavComponent implements OnInit {
-  constructor(private route: Router) {}
+  constructor(private route: Router, private authService: AuthService) {}
+
   currentTab = '';
   currentDate = new Date().toDateString();
+  account: IAccount | undefined = undefined;
+
   getNavTitle() {
     switch (this.currentTab) {
       case '/dashboard':
@@ -28,8 +33,20 @@ export class MainNavComponent implements OnInit {
     this.route.events.subscribe((e) => {
       if (e instanceof NavigationEnd) {
         this.currentTab = e.url;
-        console.log(e.url);
       }
     });
+
+    this.authService.getLoggedUser();
+    this.authService.account.subscribe((account) => {
+      this.account = account;
+    });
+  }
+
+  getAccountName() {
+    return this.account?.name || '';
+  }
+
+  getAccountRole() {
+    return this.account?.role || '';
   }
 }

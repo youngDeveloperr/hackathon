@@ -21,7 +21,8 @@
     "lib": ["es2020", "dom"],
     "paths": {
       "@nms/types": ["src/app/shared/types/index.ts"],
-      "@nms/constants": ["src/app/shared/constants/index.ts"]
+      "@nms/constants": ["src/app/shared/constants/index.ts"],
+      "@nms/services": ["src/app/shared/services/index.ts"]
     }
   },
   "angularCompilerOptions": {
