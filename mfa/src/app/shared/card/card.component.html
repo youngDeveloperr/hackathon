@@ -1,3 +1,7 @@
-<div class="container" [ngStyle]="{ width: getWidth() }">
+<div
+  class="container"
+  [ngClass]="{ active: animate }"
+  [ngStyle]="{ width: getWidth() }"
+>
   <ng-content></ng-content>
 </div>
