@@ -69,9 +69,9 @@ export class SideNavComponent implements OnInit {
       path: '/dashboard',
     },
     {
-      title: 'Team',
+      title: 'Profile',
       image: 'assets/images/teams.svg',
-      path: '/list',
+      path: '/profile',
     },
     {
       title: 'Vacations',
