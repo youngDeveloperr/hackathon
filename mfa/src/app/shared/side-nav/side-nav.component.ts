@@ -52,14 +52,14 @@ export class SideNavComponent implements OnInit {
       path: '/notification',
     },
     {
-      title: 'Settings',
-      image: 'assets/images/settings.svg',
-      path: '/settings',
-    },
-    {
       title: 'Mental Health',
       image: 'assets/images/health.svg',
       path: '/health',
+    },
+    {
+      title: 'Settings',
+      image: 'assets/images/settings.svg',
+      path: '/settings',
     },
   ];
   userSideNav = [
