@@ -75,7 +75,14 @@
           margin-left: -10px;
         }
         &.status {
-          margin-right: 30px;
+          margin-right: 60px;
+          padding-right: 40px;
+        }
+        &.project {
+          padding-right: 60px;
+        }
+        &.empcode {
+          padding-right: 40px;
         }
 
         h5 {
